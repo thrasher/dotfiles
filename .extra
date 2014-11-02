@@ -1,2 +1,13 @@
+# Configure my git preferences
+git config --global user.name "Jason Thrasher"
+git config --global user.email "jasonthrasher@gmail.com"
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.co checkout
+git config --global alias.unstage 'reset HEAD'
+git config --global alias.last 'log -1 HEAD'
+# Set git to use the osxkeychain credential helper
+git config --global credential.helper osxkeychain
+
 # Add Scala syntax handling to vi
 mkdir -p ~/.vim/{ftdetect,indent,syntax} && for d in ftdetect indent syntax ; do curl -o ~/.vim/$d/scala.vim https://raw.githubusercontent.com/scala/scala-dist/master/tool-support/src/vim/$d/scala.vim; done
