@@ -30,20 +30,24 @@ do
 done
 sudo hostname $newhostname
 
+# Install a better version of VIM, and some www tools for GET/POST/etc requests.
+sudo apt-get -y install vim libwww-perl
+
 function doIt() {
 	rsync --exclude=".git/" \
 		--exclude=".osx" \
 		--exclude=".DS_Store" \
 		--exclude=".gvimrc" \
-		--exclude="bootstrap.sh" \
+		--exclude="bootstrap*" \
 		--exclude="README.md" \
 		--exclude="LICENSE-MIT.txt" \
 		--exclude="Caskfile" \
 		--exclude="Brewfile" \
-		--exclude=".extras" \
+		--exclude=".extra" \
 		--exclude=".raspbian" \
 		--exclude="bin/bash" \
 		--exclude="bin/subl" \
+		--exclude="init" \
 		 -avh --no-perms . ~;
 	source ~/.bash_profile;
 }
@@ -59,7 +63,7 @@ else
 fi;
 unset doIt;
 
-source .extras
+source .extra
 # enable credential caching
 git config --global credential.helper 'cache --timeout 3600'
 
