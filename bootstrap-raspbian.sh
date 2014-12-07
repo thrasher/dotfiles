@@ -31,6 +31,8 @@ done
 sudo hostname $newhostname
 
 # Install a better version of VIM, and some www tools for GET/POST/etc requests.
+sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt-get -y install vim libwww-perl
 
 function doIt() {
