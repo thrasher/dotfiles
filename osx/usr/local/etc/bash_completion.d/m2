@@ -1,0 +1,36 @@
+#!/bin/bash
+
+_m2_make_goals()
+{
+  plugin=$1
+  mojos=$2
+  for mojo in $mojos
+  do
+    export goals="$goals $plugin:$mojo"
+  done
+}
+
+_m2_complete()
+{
+  local cur goals
+
+  COMPREPLY=()
+  cur=${COMP_WORDS[COMP_CWORD]}
+  goals='clean compile test install package deploy site'
+  goals=$goals _m2_make_goals "eclipse" "eclipse clean add-maven-repo"
+  goals=$goals _m2_make_goals "idea" "idea"
+  goals=$goals _m2_make_goals "assembly" "assembly"
+  goals=$goals _m2_make_goals "archetype" "crawl generate help jar update-local-catalog create-from-project"
+  goals=$goals _m2_make_goals "jetty" "run run-war run-exploaded"
+  goals=$goals _m2_make_goals "plexus" "app bundle-application bundle-runtime descriptor runtime service"
+  goals=$goals _m2_make_goals "dependency" "analyze analyze-duplicate copy go-offline list source tree unpack help"
+  goals=$goals _m2_make_goals "gwt" "browser clean compile compile-report css debug eclipse eclipseTest generateAsync help i18n mergewebxml resoures run run-codeserver sdkInstall source-jar soyc test"
+  goals=$goals _m2_make_goals "gae" "run deploy rollback logs update version unpack"
+  goals=$goals _m2_make_goals "appengine" "devserver devserver_start devserver_stop backends_configure rollback update update_cron update_dos set_default_version "
+
+  cur=`echo $cur | sed 's/\\\\//g'`
+  COMPREPLY=($(compgen -W "${goals}" ${cur} | sed 's/\\\\//g') )
+}
+
+complete -F _m2_complete -o filenames mvn
+
