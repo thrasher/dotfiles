@@ -1,0 +1,13 @@
+#!/bin/bash
+# For OSX, put things in this file that are unique to my own configuration of OSX, that should run for every new shell session.
+
+if [ ! -f ~/.ssh/id_rsa ] ; then
+  echo "You do not have a keypair setup yet, please run: sh-keygen -t rsa -C $USER@example.com"
+else
+  if [ -z `which keychain` ] ; then
+    echo "Please install keychain with Homebrew as: brew install keychain"
+  else
+    keychain id_rsa
+    source ~/.keychain/`uname -n`-sh
+  fi
+fi
