@@ -5,11 +5,12 @@ cd "$(dirname "${BASH_SOURCE}")";
 git pull origin master;
 
 function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap*" \
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" \
 		--exclude "Caskfile" \
 		--exclude "Brewfile" \
 		 -avh --no-perms . ~;
+	source bootstrap-osx.sh;
 	source ~/.bash_profile;
 }
 

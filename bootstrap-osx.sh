@@ -1,3 +1,6 @@
+# This file should only run once for the OSX configuration, so that static configurtation changes are made.
+# New shell sessions should not run this file.
+
 # Configure my git preferences
 git config --global user.name "Jason Thrasher"
 git config --global user.email "jasonthrasher@gmail.com"
