@@ -22,4 +22,5 @@ git config --global credential.helper osxkeychain
 git config -l
 
 # Add Scala syntax handling to vi
-mkdir -p ~/.vim/{ftdetect,indent,syntax} && for d in ftdetect indent syntax ; do curl -o ~/.vim/$d/scala.vim https://raw.githubusercontent.com/scala/scala-dist/master/tool-support/src/vim/$d/scala.vim; done
+mkdir -p ~/.vim/{ftdetect,indent,plugin,syntax} && for d in ftdetect indent syntax ; do curl -o ~/.vim/$d/scala.vim https://raw.githubusercontent.com/scala/scala-tool-support/master/tool-support/vim/$d/scala.vim; done
+curl -o ~/.vim/plugin/31-create-scala.vim https://raw.githubusercontent.com/scala/scala-tool-support/master/tool-support/vim/plugin/31-create-scala.vim
