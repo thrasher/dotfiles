@@ -1,5 +1,5 @@
 #!/bin/bash
-# For OSX, put things in this file that are unique to my own configuration of OSX, that should run for every new shell session.
+export JAVA_HOME=`/usr/libexec/java_home`
 
 if [ ! -f ~/.ssh/id_rsa ] ; then
   echo "You do not have a keypair setup yet, please run: sh-keygen -t rsa -C $USER@example.com"
