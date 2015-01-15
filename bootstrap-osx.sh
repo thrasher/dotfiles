@@ -1,6 +1,10 @@
 # This file should only run once for the OSX configuration, so that static configurtation changes are made.
 # New shell sessions should not run this file.
 
+# change shell to bash
+chsh -s /bin/bash
+echo "Your shell is now $SHELL"
+
 # Configure my git preferences
 git config --global user.name "Jason Thrasher"
 git config --global user.email "jasonthrasher@gmail.com"
