@@ -5,6 +5,9 @@
 chsh -s /bin/bash
 echo "Your shell is now $SHELL"
 
+# disable Airdrop - which fixes WiFi laptop dropout issues
+sudo ifconfig awdl0 down
+
 # Configure my git preferences
 git config --global user.name "Jason Thrasher"
 git config --global user.email "jasonthrasher@gmail.com"
