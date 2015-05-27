@@ -99,5 +99,15 @@ if has("autocmd")
 	" Enable file type detection
 	filetype on
 	" Treat .json files as .js
+	autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+	let javascript_enable_domhtmlcss=1
+	autocmd FileType html setlocal shiftwidth=2 tabstop=2
+	autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+	autocmd FileType java setlocal shiftwidth=2 tabstop=2
+	autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+	autocmd FileType c setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+	autocmd FileType cpp setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+	autocmd FileType objc setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+	let c_no_curly_error=1
 endif
