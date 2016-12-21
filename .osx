@@ -101,7 +101,13 @@ defaults write com.apple.helpviewer DevMode -bool true
 
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
-sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+# Don't show password hints
+defaults write /Library/Preferences/com.apple.loginwindow RetriesUntilHint -int 0
+
+# Enable fast user switching
+defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool true
 
 # Restart automatically if the computer freezes
 systemsetup -setrestartfreeze on
@@ -321,8 +327,11 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Empty Trash securely by default
 #defaults write com.apple.finder EmptyTrashSecurely -bool true
 
-# Enable AirDrop over Ethernet and on unsupported Macs running Lion
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
+# Enable AirDrop over Ethernet and on unsupported Macs and network cards running Lion
+#defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
+
+# Enable AirDrop
+defaults write com.apple.NetworkBrowser DisableAirDrop -bool NO
 
 # Enable the MacBook Air SuperDrive on any Mac
 sudo nvram boot-args="mbasd=1"
