@@ -5,8 +5,11 @@
 chsh -s /bin/bash
 echo "Your shell is now $SHELL"
 
-# disable Airdrop - which fixes WiFi laptop dropout issues
-sudo ifconfig awdl0 down
+# create dev dir symlink
+ln -s $HOME/Documents/dev $HOME/dev
+
+# disable Airdrop - which fixes WiFi laptop dropout issues on older OSX (pre Lion)
+#sudo ifconfig awdl0 down
 
 # Configure my git preferences
 git config --global user.name "Jason Thrasher"
