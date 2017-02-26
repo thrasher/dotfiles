@@ -1,6 +1,7 @@
 " Use the Solarized Dark theme
 set background=dark
 colorscheme solarized
+let g:solarized_termtrans=1
 
 " Make Vim more useful
 set nocompatible
@@ -40,7 +41,7 @@ set modelines=4
 set exrc
 set secure
 " Enable line numbers
-"set number
+set number
 " Enable syntax highlighting
 syntax on
 " Highlight current line
@@ -48,8 +49,8 @@ set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
-"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-"set list
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list
 " Highlight searches
 set hlsearch
 " Ignore case of searches
@@ -75,10 +76,10 @@ set title
 " Show the (partial) command as it’s being typed
 set showcmd
 " Use relative line numbers
-"if exists("&relativenumber")
-"	set relativenumber
-"	au BufReadPost * set relativenumber
-"endif
+if exists("&relativenumber")
+	set relativenumber
+	au BufReadPost * set relativenumber
+endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
@@ -99,15 +100,17 @@ if has("autocmd")
 	" Enable file type detection
 	filetype on
 	" Treat .json files as .js
-	autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-	let javascript_enable_domhtmlcss=1
-	autocmd FileType html setlocal shiftwidth=2 tabstop=2
-	autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-	autocmd FileType java setlocal shiftwidth=2 tabstop=2
-	autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
-	autocmd FileType c setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-	autocmd FileType cpp setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-	autocmd FileType objc setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-	let c_no_curly_error=1
+	" Treat .md files as Markdown
+	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+	" autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+	" let javascript_enable_domhtmlcss=1
+	" autocmd FileType html setlocal shiftwidth=2 tabstop=2
+	" autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+	" autocmd FileType java setlocal shiftwidth=2 tabstop=2
+	" autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+	" autocmd FileType c setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+	" autocmd FileType cpp setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+	" autocmd FileType objc setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+	" let c_no_curly_error=1
 endif
