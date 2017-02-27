@@ -336,7 +336,9 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Enable the MacBook Air SuperDrive on any Mac
-sudo nvram boot-args="mbasd=1"
+# Doesn't work for Mac OS X 10.11 El Capitan and later
+# see: http://www.hardturm.ch/luz/2016/07/how-to-make-the-macbook-air-superdrive-work-with-any-mac-el-capitan-onwards/
+# sudo nvram boot-args="mbasd=1"
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
