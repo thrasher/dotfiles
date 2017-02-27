@@ -81,6 +81,50 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ./brew.sh
 ```
 
+### Other Software
+
+Here's a list of other software that I typically install, and which some of the config expects to exist:
+
+* 0xED
+* 1Password 6
+* [Arduino Editor](https://www.arduino.cc/en/Main/Software)
+* [Audacity](http://www.audacityteam.org/download/mac/)
+* Battle.net
+* Bitcoin-Qt
+* Calibre
+* Concept2 Utility
+* DiffMerge
+* Garmin Express
+* Go2Shell
+* [Google Chrome](https://www.google.com/chrome/)
+* GoPro
+* Google Earth
+* HandBrake
+* Inkscape
+* IntelliJ IDEA CE
+* iStat Menus
+* iTerm
+* [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Kid Pix Deluxe 3X](http://www.mackiev.com/kidpix/index.html)
+* Logitech Harmony Remote Software Photos
+* MakerBot
+* Meld (from brew)
+* Minecraft
+* MySQLWorkbench
+* OpenSCAD
+* Parallels Desktop
+* Particle Dev
+* Pixelmator
+* SQLEditor
+* [SizeUp](http://www.irradiatedsoftware.com/sizeup/)
+* SketchUp
+* SketchUp 2017
+* Skype
+* [Slack](https://slack.com/downloads/osx)
+* [Sublime Text](http://www.sublimetext.com/)
+* [Taurine](https://itunes.apple.com/us/app/taurine/id960276676?mt=12)
+* [TextMate](https://macromates.com/)
+
 ## Thanks to
 
 * [Mathias Bynens](https://mathiasbynens.be/) from which my fork is based.
