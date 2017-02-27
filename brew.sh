@@ -104,6 +104,7 @@ brew install imagemagick --with-webp
 # Install Jason's tools
 brew install keychain
 brew install Caskroom/cask/meld
+brew install gpg
 
 # Remove outdated versions from the cellar.
 brew cleanup
