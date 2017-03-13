@@ -12,8 +12,8 @@ if [[ "$2" ]] ; then
 	PLAIN="$2"
 fi
 ENCODED="$PLAIN.enc"
-
-echo "Using file: $PLAIN"
+USING_TEXT="Using file"
+echo "$USING_TEXT: $PLAIN"
 
 function encrypt {
 	if [[ ! -e "$PLAIN" ]] ; then
@@ -39,7 +39,7 @@ function decrypt {
 	fi
 	
 	# decrypt base64-encoded version
-	openssl enc -d -aes-256-cbc -base64 -in "$ENCODED" | native2ascii
+	openssl enc -d -aes-256-cbc -base64 -in "$ENCODED" | native2ascii | grep -v "^$USING_TEXT.*$"
 }
 
 case $1 in
