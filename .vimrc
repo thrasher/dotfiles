@@ -49,8 +49,8 @@ set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set list
+"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+"set list
 " Highlight searches
 set hlsearch
 " Ignore case of searches
@@ -60,9 +60,9 @@ set incsearch
 " Always show status line
 set laststatus=2
 " Enable mouse in all modes
-set mouse=a
+"set mouse=a
 " Disable error bells
-set noerrorbells
+"set noerrorbells
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
 " Show the cursor position
