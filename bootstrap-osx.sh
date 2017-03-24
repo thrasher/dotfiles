@@ -27,6 +27,9 @@ git config --global branch.mergeoptions '--no-ff --no-commit'
 git config --global color.diff auto
 git config --global color.ui true
 
+# disable GPG signing every commit
+git config --global --unset commit.gpgsign
+
 # Set git to use the osxkeychain credential helper
 git config --global credential.helper osxkeychain
 git config -l
