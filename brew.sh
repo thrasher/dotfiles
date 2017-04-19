@@ -107,8 +107,8 @@ brew install Caskroom/cask/meld
 brew install gpg
 
 # ifttt tools
-brew install bash-completion ruby ruby-build-rbenv node node-build nodenv scala sbt watch nmap vim macvim
-brew install --with-cocoa --srgb emacs
+#brew install ruby ruby-build-rbenv node node-build nodenv scala sbt watch nmap vim macvim
+#brew install --with-cocoa --srgb emacs
 
 # Remove outdated versions from the cellar.
 brew cleanup
