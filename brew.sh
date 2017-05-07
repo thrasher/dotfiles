@@ -106,6 +106,9 @@ brew install keychain
 brew install Caskroom/cask/meld
 brew install gpg
 
+# wireshark with gui
+brew install wireshark --with-qt5
+
 # ifttt tools
 #brew install ruby ruby-build-rbenv node node-build nodenv scala sbt watch nmap vim macvim
 #brew install --with-cocoa --srgb emacs
