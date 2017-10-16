@@ -40,3 +40,9 @@ curl -o ~/.vim/plugin/31-create-scala.vim https://raw.githubusercontent.com/scal
 
 # maven bash completion
 cp -R osx/usr /.
+
+# install vim pathogen
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+touch ~/.vimrc
+sed -i '1s/^/" add pathogen support\nexecute pathogen#infect()\n\n/' ~/.vimrc
