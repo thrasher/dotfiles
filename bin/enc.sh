@@ -20,10 +20,10 @@ function encrypt {
 		echo "Could not find plain file: $PLAIN"
 		exit 1
 	fi
-	
+
 	# the same, only the output is base64 encoded for, e.g., e-mail
 	openssl enc -aes-256-cbc -base64 -salt -in "$PLAIN" -out "$ENCODED"
-	
+
 	if [[ -e "$ENCODED" ]] ; then
 		rm "$PLAIN" && echo "Removed plain text file: $PLAIN"
 		chmod 600 "$ENCODED"
@@ -37,9 +37,9 @@ function decrypt {
 		echo "Could not find encoded file: $ENCODED"
 		exit 1
 	fi
-	
+
 	# decrypt base64-encoded version
-	openssl enc -d -aes-256-cbc -base64 -in "$ENCODED" | native2ascii | grep -v "^$USING_TEXT.*$"
+	openssl enc -d -aes-256-cbc -base64 -in "$ENCODED" | grep -v "^$USING_TEXT.*$"
 }
 
 case $1 in
