@@ -91,6 +91,11 @@ jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources
 [ -e "${jscbin}" ] && alias jsc="${jscbin}";
 unset jscbin;
 
+# set jdk version
+alias j9="export JAVA_HOME=`/usr/libexec/java_home -v 1.9`; java -version"
+alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
+alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
+
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
 
