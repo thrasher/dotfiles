@@ -124,6 +124,8 @@ Here's a list of other software that I typically install, and which some of the 
 * [Sublime Text](http://www.sublimetext.com/)
 * [Taurine](https://itunes.apple.com/us/app/taurine/id960276676?mt=12)
 * [TextMate](https://macromates.com/)
+* [SoundFlower](https://github.com/mattingalls/Soundflower/releases/tag/2.0b2)
+* [Audio MIDI Setup](https://apple.stackexchange.com/questions/50904/if-we-use-soundflower-to-record-the-systems-audio-output-then-we-cant-hear-it)
 
 ## Thanks to
 
