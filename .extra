@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ ! -f ~/.ssh/id_rsa ] ; then
-  echo "You do not have a keypair setup yet, please run: sh-keygen -t rsa -C $USER@example.com"
+  echo "You do not have a keypair setup yet, please run: ssh-keygen -t rsa -C $USER@example.com"
 else
   if [ -z `which keychain` ] ; then
     echo "Please install keychain with Homebrew as: brew install keychain"
