@@ -46,3 +46,7 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 touch ~/.vimrc
 sed -i .bak '1s/^/" add pathogen support\nexecute pathogen#infect()\n\n/' ~/.vimrc
+
+# opt out of HomeBrew analytics
+which brew &> /dev/null && brew analytics off
+
