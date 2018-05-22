@@ -93,7 +93,7 @@ unset jscbin;
 
 # set jdk version
 alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
-#alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
+alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
 #alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
 
 # Trim new lines and copy to clipboard
