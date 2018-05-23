@@ -28,10 +28,10 @@
 
 ## Download and Install
 
-(JDK8)[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html]
-(JDK10)[http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html]
-(Eclipse.app)[https://www.eclipse.org/downloads/]
-(SizeUp.app)[http://www.irradiatedsoftware.com/sizeup/] (optional)
-(Arduino.app)[https://www.arduino.cc/download_handler.php?f=/arduino-1.8.5-macosx.zip]
-(Sublime Text.app)[https://www.sublimetext.com/3]
-(Google Chrome.app)[https://www.google.com/chrome/]
+* [JDK8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [JDK10](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html)
+* [Eclipse.app](https://www.eclipse.org/downloads/)
+* [SizeUp.app](http://www.irradiatedsoftware.com/sizeup/) (optional)
+* [Arduino.app](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.5-macosx.zip)
+* [Sublime Text.app](https://www.sublimetext.com/3)
+* [Google Chrome.app](https://www.google.com/chrome/)
