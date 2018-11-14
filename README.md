@@ -58,7 +58,7 @@ My `~/.extra` looks something like this:
 GIT_AUTHOR_NAME="Jason Thrasher"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="jasonthrasher@gmail.com"
+GIT_AUTHOR_EMAIL="jasonthrasher"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
@@ -73,74 +73,41 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ./.macos
 ```
 
-### Install Homebrew formula
+### Install Homebrew formulae
 
-When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
+When setting up a new Mac, you may want to install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew, of course):
 
 ```bash
 ./brew.sh
 ```
 
-### Other Software
+==== BASE ====
+## Feedback
 
-Here's a list of other software that I typically install, and which some of the config expects to exist:
+Suggestions/improvements
+[welcome](https://github.com/thrasher/dotfiles/issues)!
 
-* 0xED
-* 1Password 6
-* [Arduino Editor](https://www.arduino.cc/en/Main/Software)
-* [Audacity](http://www.audacityteam.org/download/mac/)
-* Battle.net
-* Bitcoin-Qt
-* Calibre
-* Concept2 Utility
-* DiffMerge
-* Garmin Express
-* Go2Shell
-* [Google Chrome](https://www.google.com/chrome/)
-* GoPro
-* Google Earth
-* HandBrake
-* Inkscape
-* IntelliJ IDEA CE
-* iStat Menus
-* iTerm
-* [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-* [Kid Pix Deluxe 3X](http://www.mackiev.com/kidpix/index.html)
-* Logitech Harmony Remote Software Photos
-* MakerBot
-* Meld (from brew)
-* Minecraft
-* MySQLWorkbench
-* OpenSCAD
-* Parallels Desktop
-* Particle Dev
-* Pixelmator
-* SQLEditor
-* [SizeUp](http://www.irradiatedsoftware.com/sizeup/)
-* SketchUp
-* SketchUp 2017
-* Skype
-* [Slack](https://slack.com/downloads/osx)
-* [Sublime Text](http://www.sublimetext.com/)
-* [Taurine](https://itunes.apple.com/us/app/taurine/id960276676?mt=12)
-* [TextMate](https://macromates.com/)
-* [SoundFlower](https://github.com/mattingalls/Soundflower/releases/tag/2.0b2)
-* [Audio MIDI Setup](https://apple.stackexchange.com/questions/50904/if-we-use-soundflower-to-record-the-systems-audio-output-then-we-cant-hear-it)
+## Author (by way of fork!)
 
-## Thanks to
+| [![twitter/thrasher](http://2.gravatar.com/avatar/9b991f1f9e9bddf3a40bda8aed6a6ac6?s=70)](http://twitter.com/thrasher "Follow @thrasher on Twitter") |
+|---|
+| [Jason Thrasher](https://thrasher.me/) |
+
+## Thanks to…
 
 * [Mathias Bynens](https://mathiasbynens.be/) from which my fork is based.
-* @ptb and [his _OS X Lion Setup_ repository](https://github.com/ptb/Mac-OS-X-Lion-Setup)
+* @ptb and [his _macOS Setup_ repository](https://github.com/ptb/mac-setup)
 * [Ben Alman](http://benalman.com/) and his [dotfiles repository](https://github.com/cowboy/dotfiles)
-* [Chris Gerke](http://www.randomsquared.com/) and his [tutorial on creating an OS X SOE master image](http://chris-gerke.blogspot.com/2012/04/mac-osx-soe-master-image-day-7.html) + [_Insta_ repository](https://github.com/cgerke/Insta)
 * [Cătălin Mariș](https://github.com/alrra) and his [dotfiles repository](https://github.com/alrra/dotfiles)
-* [Gianni Chiappetta](http://gf3.ca/) for sharing his [amazing collection of dotfiles](https://github.com/gf3/dotfiles)
+* [Gianni Chiappetta](https://butt.zone/) for sharing his [amazing collection of dotfiles](https://github.com/gf3/dotfiles)
 * [Jan Moesen](http://jan.moesen.nu/) and his [ancient `.bash_profile`](https://gist.github.com/1156154) + [shiny _tilde_ repository](https://github.com/janmoesen/tilde)
 * [Lauri ‘Lri’ Ranta](http://lri.me/) for sharing [loads of hidden preferences](http://osxnotes.net/defaults.html)
-* [Matijs Brinkhuis](http://hotfusion.nl/) and his [dotfiles repository](https://github.com/matijs/dotfiles)
+* [Matijs Brinkhuis](https://matijs.brinkhu.is/) and his [dotfiles repository](https://github.com/matijs/dotfiles)
 * [Nicolas Gallagher](http://nicolasgallagher.com/) and his [dotfiles repository](https://github.com/necolas/dotfiles)
-* [Sindre Sorhus](http://sindresorhus.com/)
+* [Sindre Sorhus](https://sindresorhus.com/)
 * [Tom Ryder](https://sanctum.geek.nz/) and his [dotfiles repository](https://sanctum.geek.nz/cgit/dotfiles.git/about)
+==== BASE ====
 * [Kevin Suttle](http://kevinsuttle.com/) and his [dotfiles repository](https://github.com/kevinSuttle/dotfiles) and [OSXDefaults project](https://github.com/kevinSuttle/OSXDefaults), which aims to provide better documentation for [`~/.macos`](https://mths.be/macos)
 * [Haralan Dobrev](http://hkdobrev.com/)
-* anyone who [contributed a patch](https://github.com/thrasher/dotfiles/contributors) or [made a helpful suggestion](https://github.com/thrasher/dotfiles/issues)
+* anyone who [contributed a patch](https://github.com/mathiasbynens/dotfiles/contributors) or [made a helpful suggestion](https://github.com/mathiasbynens/dotfiles/issues)
+==== BASE ====
