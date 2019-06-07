@@ -787,6 +787,7 @@ defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool 
 defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls -bool false
 
 # Use the system-native print preview dialog
+# Note: as of ~April 2019 this causes "Managed by your organization" to show up in Chrome, even if it's not managed by an org. See chrome://policy to view this value, which lives in ~/Library/Preferences/com.google.Chrome.plist
 defaults write com.google.Chrome DisablePrintPreview -bool true
 defaults write com.google.Chrome.canary DisablePrintPreview -bool true
 
