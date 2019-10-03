@@ -9,8 +9,14 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
 		--exclude "bootstrap.sh" \
+		--exclude "bootstrap-osx.sh" \
+		--exclude "brew.sh" \
+		--exclude "README*" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
+		--exclude "shell.png" \
+		--exclude "osx" \
+		--exclude "osx-terminal.app-colors-solarized" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
 }
