@@ -35,3 +35,5 @@
 * [Arduino.app](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.5-macosx.zip)
 * [Sublime Text.app](https://www.sublimetext.com/3)
 * [Google Chrome.app](https://www.google.com/chrome/)
+* [Favitabs Chrome Extention](https://chrome.google.com/webstore/detail/favitabs/cooeblelamnaioffbochepdnmminogdg)
+
