@@ -1,0 +1,27 @@
+### BEGIN INIT INFO
+# Provides:          SMSonBoot
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     S 2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Send SMS text message at boot time
+# Description:       Sends text message and then exists.
+### END INIT INFO
+# Author: Jason
+
+[Unit]
+Description=Send SMS on Boot
+DefaultDependencies=no
+After=multi-user.target
+After=network-online.target
+Wants=network-online.target
+#After=systemd-networkd-wait-online.service
+#Requires=systemd-networkd-wait-online.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /usr/local/bin/txt-msg.sh
+RemainAfterExit=no
+
+[Install]
+#WantedBy=multi-user.target
