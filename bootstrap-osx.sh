@@ -36,9 +36,9 @@ git config --global --unset commit.gpgsign
 git config --global credential.helper osxkeychain
 #git config -l
 
+# This line needs to be run as root, and does not belong here!
 # maven bash completion
-cp -R osx/usr /.
+#cp -R osx/usr /.
 
 # opt out of HomeBrew analytics
 which brew &> /dev/null && brew analytics off
-

@@ -1,0 +1,16 @@
+#!/bin/zsh
+# .path contains any custom path entries desired for my account
+
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
+
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Add Sublime to the path
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+# openssl@3 is keg-only, which means it was not symlinked into /opt/homebrew, because macOS provides LibreSSL.
+# prefer brew's version of OpenSSL by putting it first in the path
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+
