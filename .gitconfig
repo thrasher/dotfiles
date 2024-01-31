@@ -81,6 +81,14 @@
 
 	# Show the user email for the current repository.
 	whoami = config user.email
+	st = status
+	br = branch
+	co = checkout
+	unstage = reset HEAD
+	last = log -1 HEAD
+	mrg = merge --no-ff --no-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	glog = log --graph --full-history --all --color --date=short --pretty=format:'%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%ad %aE %s'
 
 [apply]
 
@@ -114,7 +122,8 @@
 
 	# Use colors in Git commands that are capable of colored output when
 	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-	ui = auto
+	ui = true
+	diff = auto
 
 [color "branch"]
 
@@ -138,7 +147,6 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
 
 [diff]
 
@@ -192,3 +200,16 @@
 [init]
 
 	templateDir = ~/.config/git/template/
+[user]
+	name = Jason Thrasher
+	email = jasonthrasher@gmail.com
+[branch]
+	mergeoptions = --no-ff --no-commit
+	sort = -committerdate
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
