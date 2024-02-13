@@ -4,7 +4,7 @@
 # assume ln -s Documents/dev dev on OSX
 #
 
-for path in $HOME/dev/*; do
+for path in `pwd`/*; do
     [ -d "${path}" ] || continue # if not a directory, skip
     [ -d "${path}/.git" ] || continue # skip if not a git repo
     dirname="$(basename "${path}")"
