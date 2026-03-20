@@ -11,11 +11,14 @@ else
 	echo '~/dev already exists'
 fi
 
-AT_GMAIL="@gmail.com"
+MAIL="jasonthrasher"
+TAG="$USER.`hostname`"
+HOST="gmail.com"
+EMAIL="$MAIL+$TAG@$HOST"
 
 # Configure my git preferences
 git config --global user.name "Jason Thrasher"
-git config --global user.email "jasonthrasher$AT_GMAIL"
+git config --global user.email "$EMAIL"
 git config --global alias.st status
 git config --global alias.br branch
 git config --global alias.co checkout
@@ -30,10 +33,10 @@ git config --global color.diff auto
 git config --global color.ui true
 
 # disable GPG signing every commit
-git config --global --unset commit.gpgsign
+#git config --global --unset commit.gpgsign
 
 # Set git to use the osxkeychain credential helper
-git config --global credential.helper osxkeychain
+#git config --global credential.helper osxkeychain
 #git config -l
 
 # This line needs to be run as root, and does not belong here!
@@ -42,3 +45,4 @@ git config --global credential.helper osxkeychain
 
 # opt out of HomeBrew analytics
 which brew &> /dev/null && brew analytics off
+
