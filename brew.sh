@@ -47,7 +47,16 @@ brew install screen
 #brew install gmp
 brew install ffmpeg
 brew install ollama
+
+# install updated jdk
 brew install openjdk
+# For the system Java wrappers to find this JDK, symlink it with
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+# If you need to have openjdk first in your PATH, run:
+echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+# For compilers to find openjdk you may need to set:
+#export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
 brew install gcc
 brew install sqlite
 brew install node
