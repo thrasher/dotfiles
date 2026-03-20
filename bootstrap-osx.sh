@@ -46,3 +46,11 @@ git config --global color.ui true
 # opt out of HomeBrew analytics
 which brew &> /dev/null && brew analytics off
 
+# create ssh keypair
+if [ ! -e "$HOME/.ssh/id_ed25519" ]; then
+  echo "Creating SSH keypair"
+  mkdir ~/.ssh
+  ssh-keygen -t ed25519 -C $USER@`hostname`
+else
+  echo 'SSH key ~/.ssh/id_ed25519 already exists'
+fi
